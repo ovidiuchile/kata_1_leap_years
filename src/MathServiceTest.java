@@ -22,4 +22,9 @@ public class MathServiceTest {
     public void non_leap_year_should_be_divisible_by_100(){
     	assertFalse(MathService.isLeapYear(2100));
     }
+    
+    @Test
+    public void leap_year_should_be_divisible_by_400(){
+    	assertTrue(MathService.isLeapYear(2000));
+    }
 }
